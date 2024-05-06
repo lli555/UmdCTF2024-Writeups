@@ -12,17 +12,17 @@ So I tried intercepting the donation request with `Burp Suite`.
 
 I noticed that the request is sending my donation to "lisanalgaib", so I tried changing that to a user I created, but it did not work.
 
-![[web1_2.png]]
+![intro_page](/images/web1_2.png)
 
 After some careful examination, I've decided to play around with the "to" paramter through overriding the destination with an additional "to" directed to my user. I checked that user's profile and see that my currency actually increased.
 
-![[web1_3.png]]
+![intro_page](/images/web1_3.png)
 
 
 ### Solution
 
 However, I can send at most 1000 currency from each user. Therefore, I registered a bunch of users to send "currency" all to one account. Eventually, it reached the threshold (5000+ currency) to give me the flag.
 
-![[web1_4.png]]
+![intro_page](/images/web1_4.png)
 
 
