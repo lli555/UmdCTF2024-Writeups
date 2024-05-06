@@ -8,8 +8,7 @@ The message on the web page tells us that it wants us to get the most donations,
 
 So I tried intercepting the donation request with `Burp Suite`.
 
-
-![[web1_1.png]]
+![intro_page](web1_1.png)
 
 I noticed that the request is sending my donation to "lisanalgaib", so I tried changing that to a user I created, but it did not work.
 
